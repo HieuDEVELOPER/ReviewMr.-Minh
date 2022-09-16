@@ -1,0 +1,18 @@
+@mixin bgrColor($color:#F5F5F5) {
+    background-color: $color; 
+}
+
+@mixin mainColor {
+    background-color: #54BD95;
+}
+@mixin textColor {
+   color:#A6A6A6; 
+}
+@mixin  textHeadingColor {
+    color: #191A15;
+}
+@mixin responsiveLap {
+    @media (max-width: 1281px) {
+        @content
+    }
+}

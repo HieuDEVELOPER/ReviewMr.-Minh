@@ -1,0 +1,56 @@
+footer {
+    background-color: #161C28;
+    width: 1440px;
+    height: 1217px;
+    
+    margin: 0 auto;
+
+    & .footer-container {
+
+        display: flex;
+
+        & .footer__left {
+            background-color: #161C28;
+
+            & .footer__text {
+                background-color: #161C28;
+                & p{
+                    background-color: #161C28;
+                }
+               
+                & .footer__heading {
+                    font-size: 50px;
+                    line-height: 60.51px;
+                    font-weight: 600;
+                    color: #FFFFFF;
+                }
+
+                & .footer__desc {
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    color: #A6A6A6;
+                }
+
+                & .footer__cmt {
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    color: #A6A6A6;
+                }
+
+                & .footer__userName {
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    color: #A6A6A6;
+                }
+            }
+        }
+
+
+        & .footer__right {
+            background-color: #161C28;
+        }
+    }
+}

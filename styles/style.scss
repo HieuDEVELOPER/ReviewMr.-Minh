@@ -1,0 +1,9 @@
+@import"./general";
+@import"./header";
+@import "./features";
+@import "./footer";
+* {
+    font-family: "Inter", sans-serif;
+    @include bgrColor();
+}
+

@@ -1,0 +1,327 @@
+header {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+
+
+    & .header-container {
+        margin: 0 auto;
+        width: 1180px;
+        height: 40px;
+        display: flex;
+
+        & .header-logo {
+            letter-spacing: 0.5px;
+            padding-right: 5px;
+            padding-left: 1px;
+            font-style: normal;
+            font-size: 50px;
+            font-weight: 600;
+            line-height: 30px;
+            color: #54BD95;
+            text-decoration: none;
+
+        }
+
+        & .list-menu {
+            margin-left: 296px;
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+
+            gap: 41px;
+
+            & .link-item {
+                margin-top: -5px;
+
+                & a {
+                    text-decoration: none;
+                    font-size: 16px;
+
+                    font-weight: 500;
+                    line-height: 19.36px;
+
+                    @include textColor;
+
+                    &:hover {
+                        color: #000000;
+
+                        line-height: 21.78px;
+                    }
+
+                }
+            }
+
+
+        }
+
+        & .two-btn {
+            display: flex;
+            margin-left: 130px;
+            flex-direction: row;
+
+            & .login-btn {
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19.36px;
+                margin-top: 11px;
+                @include textColor;
+
+                &:hover {
+                    color: #000000;
+                    line-height: 21.78px;
+                }
+            }
+
+            & .signup-btn {
+                text-decoration: none;
+                padding: 11px 10px 10px 10px;
+                border-radius: 10px;
+                @include mainColor;
+                color: #F8F8FA;
+                margin-left: 21px;
+            }
+        }
+
+    }
+    @include responsiveLap(){
+        
+    }
+}
+
+.product {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 130px;
+
+    & .prd__container {
+        display: flex;
+        flex-direction: row;
+
+        & .prd-left {
+            margin-left: 13px;
+
+            & .prd-heading {
+                margin-top: 0px;
+                letter-spacing: 1.7px;
+                font-size: 80px;
+                font-weight: 700;
+                line-height: 90px;
+                width: 555px;
+                @include textHeadingColor;
+            }
+
+            & .prd-desc {
+                margin-left: -1.5px;
+                letter-spacing: 0.1px;
+                margin-top: 106px;
+                width: 461px;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 30px;
+                color: #000000;
+            }
+
+            & .three-item {
+                margin-top: 50px;
+                display: flex;
+                align-items: center;
+
+                & .btn-prd {
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 21.78px;
+                    padding: 20px 30px;
+                    color: #FFFFFF;
+                    border-radius: 40px;
+                    @include mainColor();
+                }
+
+                & .prd-icon {
+                    font-size: 31.67px;
+                    margin-left: 43px;
+                }
+
+                & .view-demo {
+                    margin-left: 19px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 21.78px;
+                    @include textHeadingColor;
+                }
+            }
+        }
+
+        & .prd-right img {
+            width: 572px;
+            height: 526px;
+            margin-left: 51px;
+        }
+    }
+
+    & .prd-brand {
+
+        margin-top: 131px;
+        text-align: center;
+
+        & .brand-heading {
+            letter-spacing: 0.7px;
+            font-style: normal;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 48.41px;
+            @include textHeadingColor;
+        }
+
+        & .list-brand {
+            margin-top: 59px;
+
+            & .brand-img {
+                margin-right: 102px;
+            }
+        }
+    }
+}
+
+.support {
+    margin-top: 130px;
+
+    & .sp__container {
+
+        width: 80%;
+        margin: auto;
+        margin-top: 145px;
+        display: flex;
+        padding-bottom: 60px;
+
+        & .sp-left {
+            margin-left: 11px;
+
+            & .left-heading {
+                height: auto;
+                letter-spacing: 0.5px;
+
+                width: 617px;
+                font-size: 50px;
+                font-weight: 600;
+                line-height: 60.51px;
+                @include textHeadingColor();
+            }
+
+            & .left-desc {
+                margin-top: -11px;
+                letter-spacing: 0.1px;
+                width: 644px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 30px;
+                @include textColor();
+
+            }
+
+            & .sp-feedback {
+                margin-top: 73px;
+                display: flex;
+                gap: 78px;
+
+                & .feedback-item {
+                    margin-left: 1px;
+
+                    & .feedback-star {
+                        letter-spacing: 6.3px;
+                        color: #FFC728;
+                        font-size: 20px;
+                    }
+
+                    & .feedback-rating {
+                        margin-top: 20px;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 21.78px;
+                        @include textHeadingColor();
+                    }
+
+                    & .feedback-type {
+                        letter-spacing: 0.2px;
+                        margin-top: 18px;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 21.78px;
+                    }
+                }
+
+            }
+        }
+
+        & .sp-right {
+            // margin-top: 17px;
+            margin-left: 26px;
+            height: 411px;
+            width: 509px;
+
+            & .sp-content {
+                display: flex;
+
+                & .sp-icon img {
+                    padding: 16.75px;
+                    background-color: #FFFFFF;
+                    margin-right: 21px;
+                }
+
+                & .publishing--icon {
+                    margin-top: 41px;
+                }
+
+                & .analytics--icon {
+                    margin-top: 10px;
+                }
+
+                & .engagement--icon {
+                    margin-top: -20px;
+                }
+
+
+                & .sp-text {
+                    display: flex;
+                    flex-direction: column;
+
+                    & .right-heading {
+                        letter-spacing: 1px;
+                        font-weight: 700;
+                        font-size: 28px;
+                        line-height: 33.89px;
+                        margin: 0px;
+                    }
+
+                    & .right-desc {
+                        margin-top: 10px;
+                        height: 90px;
+                        font-style: normal;
+                        letter-spacing: 0.1px;
+                        width: 428px;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 30px;
+                    }
+
+                }
+
+                & .publishing--text {
+                    margin-top: 44px;
+                }
+
+                & .analytics--text {
+                    margin-top: 15px;
+                    margin-left: -1px;
+                }
+
+                & .engagement--text {
+                    margin-top: -15px;
+                    margin-left: -2px;
+                }
+            }
+        }
+    }
+}
